@@ -6,6 +6,7 @@
 > В то время как разработка нового проекта похожа на прогулку по неизвестной территории, поддержка его — это потенциально мрачный извращенный кошмар для кого-то другого.
 Это список требований, которые мы нашли, написали и собрали, которые (мы думаем) действительно работают с большинством JavaScript-проектов тут, в [hive](http://wearehive.co.uk).
 Если ты хочешь добавить лучшие практики или думаешь, что что-то должно быть удалено, [поделись с нами](http://makeapullrequest.com).
+
 - [Git](#git)
     - [Некоторые правила Git](#some-git-rules)
     - [Git workflow](#git-workflow)
@@ -33,11 +34,11 @@
 * Выполняйте работу в отдельных feature-ветках.
     
     _Почему:_
-    >Because this way all work is done in isolation on a dedicated branch rather than the main branch. It allows you to submit multiple pull requests without confusion. You can iterate without polluting the master branch with potentially unstable, unfinished code. [read more...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
-* Branch out from `develop`
+    >Потому что тогда всё работа делает изолированно в отдельном бранче, а не в основной ветке. Это позволяет отправлять несколько пулл-реквестов без путаницы. Вы можете работать в разных бранчах, не загрязняя главный бранч потенциально нестабильным, незавершенным кодом. [читать по теме...](https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow)
+* Новые бранчи только из `develop`
     
     _Почему:_
-    >This way, you can make sure that code in master will almost always build without problems, and can be mostly used directly for releases (this might be overkill for some projects).
+    >В этом случае вы можете быть уверенны, что код в мастер-ветке будет почти всегда собираться без проблем и ветка может  использоваться только для релизов (это можеть быть излишним для некоторых проектов).
 
 * Never push into `develop` or `master` branch. Make a Pull Request.
     
